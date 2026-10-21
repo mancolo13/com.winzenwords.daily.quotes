@@ -32,27 +32,26 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: AppTheme.surfaceColor,
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
-        NavigationDestination(
-          icon: const Icon(Icons.format_quote_outlined),
-          selectedIcon: const Icon(Icons.format_quote, color: AppTheme.primaryColor),
-          label: 'Daily',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.history_edu_outlined),
-          selectedIcon: const Icon(Icons.history_edu, color: AppTheme.primaryColor),
-          label: 'Stoics',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.favorite_border),
-          selectedIcon: const Icon(Icons.favorite, color: AppTheme.primaryColor),
-          label: 'Favorites',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.edit_note_outlined),
-          selectedIcon: const Icon(Icons.edit_note, color: AppTheme.primaryColor),
-          label: 'Journal',
-        ),
-
+          NavigationDestination(
+            icon: const Icon(Icons.dashboard_outlined),
+            selectedIcon: const Icon(Icons.dashboard, color: AppTheme.primaryColor),
+            label: 'Daily Quote',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.list_alt_outlined),
+            selectedIcon: const Icon(Icons.list_alt, color: AppTheme.primaryColor),
+            label: 'Themes',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.analytics_outlined),
+            selectedIcon: const Icon(Icons.analytics, color: AppTheme.primaryColor),
+            label: 'Journal',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.settings_outlined),
+            selectedIcon: const Icon(Icons.settings, color: AppTheme.primaryColor),
+            label: 'Favorites',
+          ),
         ],
       ),
     );
